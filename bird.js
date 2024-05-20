@@ -15,13 +15,17 @@ export function updateBird(delta){
     if(timeSinceLastJump < JUMP_DURATION){
         setTop(getTop() - BIRD_SPEED*delta)
     }else{
-        setTop(getTop()+ BIRD_SPEED*delta)
+        setTop(getTop() + BIRD_SPEED*delta)
     }
   timeSinceLastJump += delta;
 }
 
+export function getBirdRect(){
+    return birdElem.getBoundingClientRect();
+}
+
 function setTop(top){
-    birdElem.computedStyleMap.setProperty('--bird-top',top)
+    birdElem.style.setProperty('--bird-top',top)
 }
 
 function getTop(){
