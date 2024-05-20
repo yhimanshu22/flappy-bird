@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the external CSS file -->
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" type="module"></script>
-    <title>Document</title>
+    <!-- Link to the external JavaScript file, using module type -->
+    <script src="script.js" type="module" defer></script>
+    <!-- Page title -->
+    <title>Bird Game</title>
 </head>
 <body>
+    <!-- Main heading for the game -->
     <h1 class="title" data-title>
-        press any key to play
+        Press any key to play
+        <!-- Subtitle for additional information, initially hidden -->
         <small data-subtitle class="subtitle hide"></small>
     </h1>
     
-    <div data-bird class="bird"></div>
-    
+    <!-- Bird element representing the player -->
+    <div data-bird class="bird" role="img" aria-label="Bird"></div>
+
+    <!-- External scripts (if any) should be added before closing the body tag -->
 </body>
 </html>
