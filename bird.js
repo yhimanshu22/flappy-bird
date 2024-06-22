@@ -2,7 +2,7 @@
 const birdElem = document.querySelector('[data-bird]');
 
 // Constants for bird's speed and jump duration
-const BIRD_SPEED = 0.5; // Speed at which the bird moves up or down
+const BIRD_SPEED = 1.0; // Speed at which the bird moves up or down
 const JUMP_DURATION = 123; // Duration of the bird's jump in milliseconds
 
 // Variable to track time since the last jump
