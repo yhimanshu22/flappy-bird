@@ -3,7 +3,7 @@
 const HOLE_HEIGHT = 300; // Height of the hole between top and bottom pipes
 const PIPE_WIDTH = 120; // Width of each pipe
 const PIPE_INTERVAL = 600; // Time interval (ms) between pipe creation
-const PIPE_SPEED = 0.75; // Speed at which pipes move to the left
+const PIPE_SPEED = 0.61; // Speed at which pipes move to the left
 
 // Variables to track pipes, time since the last pipe was created, and passed pipes count
 let pipes = [];
